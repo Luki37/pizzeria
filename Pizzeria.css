@@ -214,10 +214,6 @@ h2 {
   width: 100%;
 }
 
-.conacttext {
-
-}
-
 .adress {
   color: var(--text-color);
   margin-bottom: 0.5rem;
@@ -267,7 +263,7 @@ h2 {
   .contactimg {
     max-height: 500px;
   }
-  
+}
 
 @media only screen and (min-width: 1000px) {
   .title {
@@ -294,7 +290,7 @@ h2 {
   h2 {
     font-size: 2rem;
   }
-    #contact {
+  #contact {
     max-width: 1200px;
     margin: 2rem auto 3rem auto;
   }
@@ -307,7 +303,8 @@ h2 {
     gap: 1rem;
     margin-top: 3rem;
   }
-    .hero-action-button, .mail-button {
+  .hero-action-button,
+  .mail-button {
     margin-top: 0;
   }
 }
