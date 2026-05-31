@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap");
-
 @font-face {
   font-family: "Lobster";
   src: url(Lobster-Regular.ttf);
 }
 
-.platzhalter {
-  height: 300vh;
+@font-face {
+  font-family: "Inter";
+  src: url(Inter-VariableFont_opsz\,wght.ttf);
 }
 
 * {
@@ -47,8 +46,9 @@ body {
   text-align: center;
 }
 
-.menulink:hover {
-  color: white;
+.menulink:hover,
+.footerlink:hover {
+  color: var(--primary-color);
 }
 
 .hero {
