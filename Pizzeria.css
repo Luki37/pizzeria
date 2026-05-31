@@ -8,13 +8,8 @@
   src: url(Inter-VariableFont_opsz\,wght.ttf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
-body {
+body,
+html {
   color: white;
   font-family: "Inter", sans-serif;
   background-color: var(--hintergrundfarbe);
@@ -22,6 +17,10 @@ body {
   --text-color: rgb(244, 242, 231);
   --hintergrundfarbe: rgb(34, 33, 33);
   --test: 34, 33, 33;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 .nav {
