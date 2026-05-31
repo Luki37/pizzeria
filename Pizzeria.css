@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap");
 
+@font-face {
+  font-family: "Lobster";
+  src: url(Lobster-Regular.ttf);
+}
+
 .platzhalter {
   height: 300vh;
 }
@@ -17,6 +22,7 @@ body {
   --primary-color: rgb(245, 51, 51);
   --secondary-color: rgb(244, 242, 231);
   --hintergrundfarbe: rgb(34, 33, 33);
+  --test: 34, 33, 33;
 }
 
 .nav {
@@ -28,7 +34,7 @@ body {
   position: sticky;
   top: 0;
   width: 100vw;
-  background-color: rgb(34, 33, 33, 0.5);
+  background-color: rgba(var(--test), 0.5);
   z-index: 100;
 }
 
@@ -142,6 +148,7 @@ h2 {
   height: 100%;
   grid-column: 1;
   grid-row: 1 / span 2;
+  object-fit: cover;
 }
 
 #img2 {
@@ -167,15 +174,12 @@ h2 {
   .subtitle {
     font-size: 1.5rem;
   }
-
   .menulink {
     font-size: 1.2rem;
   }
-
   .hero-action-button {
     padding: 1.2rem 2.5rem;
   }
-
   .text {
     font-size: 1rem;
   }
@@ -188,5 +192,16 @@ h2 {
   }
   .subtitle {
     font-size: 2rem;
+  }
+  #aboutus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 3rem auto;
+  }
+  .img {
+    max-height: 500px;
   }
 }
