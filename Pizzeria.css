@@ -236,6 +236,30 @@ h2 {
   background-color: var(--primary-color);
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vw;
+  height: fit-content;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(58, 57, 57);
+  padding: 2rem;
+}
+
+.footerlink {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+.copyright {
+  font-size: 0.7rem;
+}
+
 @media only screen and (min-width: 600px) {
   .title {
     font-size: 4rem;
@@ -262,6 +286,12 @@ h2 {
   }
   .contactimg {
     max-height: 500px;
+  }
+  .footerlink {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -294,6 +324,12 @@ h2 {
     max-width: 1200px;
     margin: 2rem auto 3rem auto;
   }
+  .adress {
+    font-size: 1.2rem;
+  }
+  .footerlink {
+    gap: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -306,5 +342,8 @@ h2 {
   .hero-action-button,
   .mail-button {
     margin-top: 0;
+  }
+  .footerlink {
+    gap: 4rem;
   }
 }
