@@ -104,7 +104,8 @@ h2 {
   color: white;
 }
 
-#aboutus {
+#aboutus,
+#contact {
   width: 80vw;
   margin: 2rem 10vw 3rem 10vw;
   scroll-margin-top: 2rem;
@@ -202,6 +203,43 @@ h2 {
   text-align: right;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+}
+
+.contactimg {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.conacttext {
+
+}
+
+.adress {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.mail-button {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  width: fit-content;
+  margin-top: 1rem;
+  display: flex;
+  transition: 0.1s ease-in-out;
+  border: 1px solid var(--primary-color);
+}
+
+.mail-button:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
 @media only screen and (min-width: 600px) {
   .title {
     font-size: 4rem;
@@ -219,7 +257,17 @@ h2 {
   .text {
     font-size: 1rem;
   }
-}
+  #contact {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: space-between;
+    max-width: 80vw;
+  }
+  .contactimg {
+    max-height: 500px;
+  }
+  
 
 @media only screen and (min-width: 1000px) {
   .title {
@@ -245,5 +293,21 @@ h2 {
   }
   h2 {
     font-size: 2rem;
+  }
+    #contact {
+    max-width: 1200px;
+    margin: 2rem auto 3rem auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .kontaktlink {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+    .hero-action-button, .mail-button {
+    margin-top: 0;
   }
 }
