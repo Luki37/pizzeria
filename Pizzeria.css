@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Lobster";
-  src: url(Lobster-Regular.ttf);
+  src: url(font/Lobster-Regular.ttf);
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(Inter-VariableFont_opsz\,wght.ttf);
+  src: url(font/Inter-VariableFont_opsz\,wght.ttf);
 }
 
 body,
@@ -17,7 +17,6 @@ html {
   --text-color: rgb(244, 242, 231);
   --hintergrundfarbe: rgb(34, 33, 33);
   --test: 34, 33, 33;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -53,7 +52,7 @@ html {
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(bild\ hero.webp);
+    url(img/bild\ hero.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,7 +172,7 @@ h2 {
 
 #open {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(info.jpg);
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/info.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -246,7 +245,7 @@ h2 {
   bottom: 0;
   width: 100vw;
   background-color: rgb(58, 57, 57);
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 .footerlink {
